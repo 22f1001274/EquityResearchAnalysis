@@ -1,34 +1,4 @@
 # EquityResearchAnalysis
- 
- Real life industry use case of equity research analysis:
-
-
- ## Problem:
- * Where should we invest? Hire Bunch of Research analyst
- * Which provide researches on how well any company is doing and should we invest based on research.
-
- # Possible Solution:
- * Copy-pasting on ChatGPT, issue: tedious 
- * we need an aggregate knowledge base
- * chat gpt word limit
- * amount to text corresponds to cost, no need to supply all chunks 
- * only relevant chunks are to be given to model.
-
- ## How it works?
-
- 1. View Bunch of news article url's in a single go(use web scrapping to create a knowledge base)
- 2. Analyse the each article through prompting.
- 3. Generate response within the context of news article.
-
-# Technical architecture
-1. Documents | Document loader | (Text loader and UnstructuredUrlloader)
-2. Splits | splitting into chunks | (CharacterTextSplitter and Recursive Text Splitter)
-3. Vector DB | storing as embedding | (FAISS)
-4. Retrieval | retrieve relevant chunks for question | (RetrievalQAWithSourceChain)
-5. Prompt | Best chunks given to LLM
-6. LLM generates answer
-
-# EquityResearchAnalysis
 ## Overview
 EquityResearchAnalysis is a real-life industry use case project designed to assist in the process of equity research analysis by aggregating relevant financial and market information from various sources. The goal is to streamline the research workflow, enabling users to make informed investment decisions based on the latest available data.
 
