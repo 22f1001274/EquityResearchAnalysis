@@ -25,7 +25,6 @@ def generate_embeddings(urls):
     # create embeddings and store it to vector database
     embeddings = OpenAIEmbeddings()
     vectorindex_openai=FAISS.from_documents(doc_chunks, embeddings)
-    print(vectorindex_openai)
     return vectorindex_openai
 
 
