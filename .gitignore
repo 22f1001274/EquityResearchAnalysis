@@ -1,0 +1,6 @@
+venv/
+.env
+prerequisite/
+__pycache__/
+langchain.ipynb/
+
